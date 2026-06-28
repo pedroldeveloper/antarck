@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANTARCK | Sobre nós</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html" aria-label="Voltar para a Home">
+        <img src="logoeoutrasimagens/antarck.png" alt="ANTARCK">
+      </a>
+      <nav class="site-nav" aria-label="Navegação principal">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" data-nav-link href="sobre.html">Sobre nós</a></li>
+          <li><a class="site-nav__link" data-nav-link href="garantia.html">Garantia</a></li>
+          <li><a class="site-nav__link" data-nav-link href="produtos.html">Sumário de armas</a></li>
+        </ul>
+      </nav>
+      <div class="site-header__actions">
+        <button class="icon-button menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="mobile-drawer" aria-label="Abrir menu">
+          <span style="display:grid; gap:4px;">
+            <span style="width:22px;height:2px;background:#fff;border-radius:999px;"></span>
+            <span style="width:22px;height:2px;background:#fff;border-radius:999px;"></span>
+            <span style="width:22px;height:2px;background:#fff;border-radius:999px;"></span>
+          </span>
+        </button>
+        <a class="cart-link" href="carrinho.html" aria-label="Abrir carrinho">
+          <span class="cart-link__icon">
+            <img class="header-icon" src="logoeoutrasimagens/carrinho.png" alt="">
+          </span>
+          <span class="cart-badge" data-cart-badge hidden>0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-drawer" id="mobile-drawer" data-mobile-drawer>
+    <div class="mobile-drawer__panel">
+      <nav class="site-nav" aria-label="Navegação móvel">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" data-nav-link href="sobre.html">Sobre nós</a></li>
+          <li><a class="site-nav__link" data-nav-link href="garantia.html">Garantia</a></li>
+          <li><a class="site-nav__link" data-nav-link href="produtos.html">Sumário de armas</a></li>
+          <li><a class="site-nav__link" data-nav-link href="carrinho.html">Carrinho</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="drawer-overlay" data-drawer-overlay></div>
+
+  <main>
+    <section class="page-hero page-hero--about">
+      <div class="container">
+        <div class="page-hero__banner reveal">
+          <div class="page-hero__content">
+            <div class="eyebrow">Sobre nós</div>
+            <h1>Da garagem à linha de frente da engenharia tática.</h1>
+            <p>
+              Uma trajetória construída peça por peça, com pouco discurso e muito teste de bancada.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="container">
+        <div class="split-layout reveal">
+          <article class="story-panel">
+            <div class="eyebrow">Nossa história</div>
+            <h2 class="display">Tudo começou numa garagem no Rio de Janeiro.</h2>
+            <p class="story-panel__lead">
+              Dois amigos, um interesse comum pelo mercado tático e a convicção de que dava para fazer melhor. Sem investidor, sem fábrica — só uma bancada, ferramentas emprestadas e a teimosia de testar cada protótipo até funcionar de verdade.
+            </p>
+            <p>
+              Esse jeito de trabalhar não mudou com o crescimento da empresa. Cada modelo que leva o nome ANTARCK ainda passa pelo mesmo crivo: funciona sob pressão, ou volta para a bancada.
+            </p>
+            <p>
+              Hoje a estrutura é maior, mas a pergunta que guia o time é a mesma do primeiro dia: isso resolveria o problema de quem está em campo?
+            </p>
+            <div class="btn-row">
+              <a class="btn btn--primary" href="produtos.html">Ver catálogo</a>
+              <a class="btn btn--ghost" href="garantia.html">Conhecer a garantia</a>
+            </div>
+          </article>
+          <div class="story-image">
+            <img src="imgspaginas/Imagemsobrenos2.png" alt="Bancada de trabalho onde a ANTARCK foi fundada">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="divider"></div>
+      <div class="footer__inner">
+        <div class="footer__block">
+          <div class="footer__title">Contatos</div>
+          <strong>TELEFONE: (99) 99999 - 9999</strong>
+          <strong>EMAIL: antark@gmail.com</strong>
+        </div>
+        <div class="footer__socials">
+          <div class="footer__title">Redes sociais</div>
+          <a class="social-link" href="#" aria-label="Instagram">
+            <img src="logoeoutrasimagens/logo_instagram.png" alt="">
+            <span>antark.ofc</span>
+          </a>
+          <a class="social-link" href="#" aria-label="Facebook">
+            <img src="logoeoutrasimagens/logofacebook.png" alt="">
+            <span>antarkoficial</span>
+          </a>
+          <a class="social-link" href="#" aria-label="YouTube">
+            <img src="logoeoutrasimagens/logoyoutube.png" alt="">
+            <span>ANTARCK</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

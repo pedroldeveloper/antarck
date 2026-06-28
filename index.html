@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANTARCK | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html" aria-label="Voltar para a Home">
+        <img src="logoeoutrasimagens/antarck.png" alt="ANTARCK">
+      </a>
+
+      <nav class="site-nav" aria-label="Navegação principal">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" data-nav-link href="sobre.html">Sobre nós</a></li>
+          <li><a class="site-nav__link" data-nav-link href="garantia.html">Garantia</a></li>
+          <li><a class="site-nav__link" data-nav-link href="produtos.html">Sumário de armas</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-header__actions">
+        <button class="icon-button menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="mobile-drawer" aria-label="Abrir menu">
+          <span style="display:grid; gap:4px;">
+            <span style="width:22px;height:2px;background:#fff;border-radius:999px;"></span>
+            <span style="width:22px;height:2px;background:#fff;border-radius:999px;"></span>
+            <span style="width:22px;height:2px;background:#fff;border-radius:999px;"></span>
+          </span>
+        </button>
+        <a class="cart-link" href="carrinho.html" aria-label="Abrir carrinho">
+          <span class="cart-link__icon">
+            <img class="header-icon" src="logoeoutrasimagens/carrinho.png" alt="">
+          </span>
+          <span class="cart-badge" data-cart-badge hidden>0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobile-drawer" data-mobile-drawer>
+    <div class="mobile-drawer__panel">
+      <nav class="site-nav" aria-label="Navegação móvel">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" data-nav-link href="sobre.html">Sobre nós</a></li>
+          <li><a class="site-nav__link" data-nav-link href="garantia.html">Garantia</a></li>
+          <li><a class="site-nav__link" data-nav-link href="produtos.html">Sumário de armas</a></li>
+          <li><a class="site-nav__link" data-nav-link href="carrinho.html">Carrinho</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="drawer-overlay" data-drawer-overlay></div>
+
+  <main>
+    <section class="hero-frame">
+      <div class="container">
+        <div class="hero-carousel" data-carousel>
+          <div class="hero-carousel__viewport">
+            <figure class="carousel__slide is-active" data-slide>
+              <img src="banners/Bannercomescrita1.png" alt="Banner qualidade, impacto e desempenho">
+            </figure>
+            <figure class="carousel__slide" data-slide>
+              <img src="banners/Bannercomescrita2.png" alt="Banner engenharia moderna e ergonomia superior">
+            </figure>
+            <figure class="carousel__slide" data-slide>
+              <img src="banners/Bannersemescrita3.png" alt="Banner coleção de equipamentos táticos ANTARCK">
+            </figure>
+            <div class="carousel__veil"></div>
+            <div class="carousel__content">
+              <div class="carousel__label">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-band">
+      <div class="container">
+        <div class="quick-band__grid reveal">
+          <article class="quick-card">
+            <div class="eyebrow">Vitrine</div>
+            <h3>Catálogo com foco em performance</h3>
+            <p>Uma vitrine elegante para valorizar cada modelo com clareza e impacto visual.</p>
+            <div class="quick-card__meta">
+              <div class="stat"><strong>16</strong><span class="muted">modelos</span></div>
+              <a class="btn btn--ghost" href="produtos.html">Ver catálogo</a>
+            </div>
+          </article>
+          <article class="quick-card">
+            <div class="eyebrow">Garantia</div>
+            <h3>5 anos de cobertura</h3>
+            <p>Atendimento objetivo e linguagem institucional alinhados à marca.</p>
+            <div class="quick-card__meta">
+              <div class="stat"><strong>5 anos</strong><span class="muted">cobertura</span></div>
+              <a class="btn btn--ghost" href="garantia.html">Entender</a>
+            </div>
+          </article>
+          <article class="quick-card">
+            <div class="eyebrow">Atendimento</div>
+            <h3>Experiência consistente em todas as páginas</h3>
+            <p>Navegação unificada e carrinho persistente para uma jornada fluida.</p>
+            <div class="quick-card__meta">
+              <div class="stat"><strong>24/7</strong><span class="muted">presença digital</span></div>
+              <a class="btn btn--ghost" href="sobre.html">Conhecer</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="container">
+        <div class="split-layout reveal">
+          <article class="story-panel">
+            <div class="eyebrow">Sobre a marca</div>
+            <h2 class="display">Engenharia tática, presença que se impõe.</h2>
+            <p>
+              Cada equipamento ANTARCK passa por inspeção própria antes de chegar até você — solidez e tecnologia não são promessa, são processo.
+            </p>
+            <div class="btn-row">
+              <a class="btn btn--primary" href="sobre.html">Ler a história</a>
+              <a class="btn btn--ghost" href="produtos.html">Explorar produtos</a>
+            </div>
+          </article>
+          <div class="story-image">
+            <img src="imgspaginas/Imagemsobrenos3.png" alt="Mesa de inspeção e controle de qualidade ANTARCK">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="container">
+        <div class="eyebrow">Destaques</div>
+        <h2 class="section-title">Modelos famosos </h2>
+        <div class="hero-content-grid">
+          <div class="products-grid" data-featured-grid></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="divider"></div>
+      <div class="footer__inner">
+        <div class="footer__block">
+          <div class="footer__title">Contatos</div>
+          <strong>TELEFONE: (99) 99999 - 9999</strong>
+          <strong>EMAIL: antark@gmail.com</strong>
+        </div>
+        <div class="footer__socials">
+          <div class="footer__title">Redes sociais</div>
+          <a class="social-link" href="#" aria-label="Instagram">
+            <img src="logoeoutrasimagens/logo_instagram.png" alt="">
+            <span>antark.ofc</span>
+          </a>
+          <a class="social-link" href="#" aria-label="Facebook">
+            <img src="logoeoutrasimagens/logofacebook.png" alt="">
+            <span>antarkoficial</span>
+          </a>
+          <a class="social-link" href="#" aria-label="YouTube">
+            <img src="logoeoutrasimagens/logoyoutube.png" alt="">
+            <span>ANTARCK</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANTARCK | Garantia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html" aria-label="Voltar para a Home">
+        <img src="logoeoutrasimagens/antarck.png" alt="ANTARCK">
+      </a>
+      <nav class="site-nav" aria-label="Navegação principal">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" data-nav-link href="sobre.html">Sobre nós</a></li>
+          <li><a class="site-nav__link" data-nav-link href="garantia.html">Garantia</a></li>
+          <li><a class="site-nav__link" data-nav-link href="produtos.html">Sumário de armas</a></li>
+        </ul>
+      </nav>
+      <div class="site-header__actions">
+        <button class="icon-button menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="mobile-drawer" aria-label="Abrir menu">
+          <span style="display:grid; gap:4px;">
+            <span style="width:22px;height:2px;background:#fff;border-radius:999px;"></span>
+            <span style="width:22px;height:2px;background:#fff;border-radius:999px;"></span>
+            <span style="width:22px;height:2px;background:#fff;border-radius:999px;"></span>
+          </span>
+        </button>
+        <a class="cart-link" href="carrinho.html" aria-label="Abrir carrinho">
+          <span class="cart-link__icon">
+            <img class="header-icon" src="logoeoutrasimagens/carrinho.png" alt="">
+          </span>
+          <span class="cart-badge" data-cart-badge hidden>0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-drawer" id="mobile-drawer" data-mobile-drawer>
+    <div class="mobile-drawer__panel">
+      <nav class="site-nav" aria-label="Navegação móvel">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" data-nav-link href="sobre.html">Sobre nós</a></li>
+          <li><a class="site-nav__link" data-nav-link href="garantia.html">Garantia</a></li>
+          <li><a class="site-nav__link" data-nav-link href="produtos.html">Sumário de armas</a></li>
+          <li><a class="site-nav__link" data-nav-link href="carrinho.html">Carrinho</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="drawer-overlay" data-drawer-overlay></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero__panel reveal">
+          <div>
+            <div class="eyebrow">Garantia</div>
+            <h1>Cobertura estendida, suporte de verdade.</h1>
+            <p>
+              5 anos protegendo cada equipamento contra defeito de fabricação — sem letra miúda.
+            </p>
+          </div>
+          <div class="page-hero__art">
+            <img src="imgspaginas/garantia.png" alt="Selo de garantia ANTARCK">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="container">
+        <div class="split-layout reveal">
+          <article class="story-panel">
+            <div class="eyebrow">Cobertura</div>
+            <h2 class="display">O que está garantido, em termos simples.</h2>
+            <p>
+              Identificou um problema de fabricação? Leve o produto com a nota fiscal a qualquer assistência parceira ANTARCK.
+            </p>
+            <div class="btn-row">
+              <a class="btn btn--primary" href="produtos.html">Ir ao catálogo</a>
+            </div>
+          </article>
+          <article class="info-panel">
+            <h2>Aviso importante</h2>
+            <p>
+              A garantia cobre somente erros de fabricação. Não contempla mau uso, quedas ou alterações indevidas.
+            </p>
+            <div class="info-panel__grid">
+              <div class="info-chip"><strong>Comprovante</strong><span class="muted">Tenha a nota fiscal em mãos.</span></div>
+              <div class="info-chip"><strong>Assistência</strong><span class="muted">Procure uma parceira autorizada.</span></div>
+              <div class="info-chip"><strong>Prazo</strong><span class="muted">5 anos de cobertura.</span></div>
+              <div class="info-chip"><strong>Limitações</strong><span class="muted">Não cobre mau uso ou alteração.</span></div>
+            </div>
+            <div class="btn-row">
+              <a class="btn btn--ghost" href="sobre.html">Conhecer a ANTARCK</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="container">
+        <div class="eyebrow">Condições</div>
+        <h2 class="section-title">Como a cobertura funciona</h2>
+        <div class="quick-band__grid reveal" style="margin-top:1rem;">
+          <article class="quick-card">
+            <h3>Recepção</h3>
+            <p>O cliente leva o produto para avaliação com a documentação necessária.</p>
+          </article>
+          <article class="quick-card">
+            <h3>Análise técnica</h3>
+            <p>A assistência parceira verifica se o caso é defeito de fabricação.</p>
+          </article>
+          <article class="quick-card">
+            <h3>Retorno</h3>
+            <p>Após a validação, o processo segue para reparo, troca ou orientação.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="divider"></div>
+      <div class="footer__inner">
+        <div class="footer__block">
+          <div class="footer__title">Contatos</div>
+          <strong>TELEFONE: (99) 99999 - 9999</strong>
+          <strong>EMAIL: antark@gmail.com</strong>
+        </div>
+        <div class="footer__socials">
+          <div class="footer__title">Redes sociais</div>
+          <a class="social-link" href="#" aria-label="Instagram">
+            <img src="logoeoutrasimagens/logo_instagram.png" alt="">
+            <span>antark.ofc</span>
+          </a>
+          <a class="social-link" href="#" aria-label="Facebook">
+            <img src="logoeoutrasimagens/logofacebook.png" alt="">
+            <span>antarkoficial</span>
+          </a>
+          <a class="social-link" href="#" aria-label="YouTube">
+            <img src="logoeoutrasimagens/logoyoutube.png" alt="">
+            <span>ANTARCK</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

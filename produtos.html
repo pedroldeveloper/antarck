@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANTARCK | Sumário de armas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html" aria-label="Voltar para a Home">
+        <img src="logoeoutrasimagens/antarck.png" alt="ANTARCK">
+      </a>
+      <nav class="site-nav" aria-label="Navegação principal">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" data-nav-link href="sobre.html">Sobre nós</a></li>
+          <li><a class="site-nav__link" data-nav-link href="garantia.html">Garantia</a></li>
+          <li><a class="site-nav__link" data-nav-link href="produtos.html">Sumário de armas</a></li>
+        </ul>
+      </nav>
+      <div class="site-header__actions">
+        <button class="icon-button menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="mobile-drawer" aria-label="Abrir menu">
+          <span style="display:grid; gap:4px;">
+            <span style="width:22px;height:2px;background:#fff;border-radius:999px;"></span>
+            <span style="width:22px;height:2px;background:#fff;border-radius:999px;"></span>
+            <span style="width:22px;height:2px;background:#fff;border-radius:999px;"></span>
+          </span>
+        </button>
+        <a class="cart-link" href="carrinho.html" aria-label="Abrir carrinho">
+          <span class="cart-link__icon">
+            <img class="header-icon" src="logoeoutrasimagens/carrinho.png" alt="">
+          </span>
+          <span class="cart-badge" data-cart-badge hidden>0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-drawer" id="mobile-drawer" data-mobile-drawer>
+    <div class="mobile-drawer__panel">
+      <nav class="site-nav" aria-label="Navegação móvel">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" data-nav-link href="sobre.html">Sobre nós</a></li>
+          <li><a class="site-nav__link" data-nav-link href="garantia.html">Garantia</a></li>
+          <li><a class="site-nav__link" data-nav-link href="produtos.html">Sumário de armas</a></li>
+          <li><a class="site-nav__link" data-nav-link href="carrinho.html">Carrinho</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="drawer-overlay" data-drawer-overlay></div>
+
+  <main>
+    <section class="page-section">
+      <div class="container">
+        <div class="products-grid reveal" data-products-grid></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="divider"></div>
+      <div class="footer__inner">
+        <div class="footer__block">
+          <div class="footer__title">Contatos</div>
+          <strong>TELEFONE: (99) 99999 - 9999</strong>
+          <strong>EMAIL: antark@gmail.com</strong>
+        </div>
+        <div class="footer__socials">
+          <div class="footer__title">Redes sociais</div>
+          <a class="social-link" href="#" aria-label="Instagram">
+            <img src="logoeoutrasimagens/logo_instagram.png" alt="">
+            <span>antark.ofc</span>
+          </a>
+          <a class="social-link" href="#" aria-label="Facebook">
+            <img src="logoeoutrasimagens/logofacebook.png" alt="">
+            <span>antarkoficial</span>
+          </a>
+          <a class="social-link" href="#" aria-label="YouTube">
+            <img src="logoeoutrasimagens/logoyoutube.png" alt="">
+            <span>ANTARCK</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
