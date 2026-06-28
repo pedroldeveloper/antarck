@@ -663,7 +663,7 @@ function initCarousel() {
   slides.forEach((slide) => applyCarouselRatio(slide));
 
   const show = (nextIndex) => {
-    index = nextIndex;
+    index = (nextIndex + slides.length) % slides.length;
     applyCarouselRatio(slides[index]);
     slides.forEach((slide, slideIndex) => {
       slide.classList.toggle("is-active", slideIndex === index);
@@ -671,15 +671,14 @@ function initCarousel() {
   };
 
   let timer;
-  const restart = () => {
+  const tick = () => show(index + 1);
+  const restart = (delay = 2000) => {
     clearInterval(timer);
-    timer = setInterval(() => show((index + 1) % slides.length), 6500);
+    timer = setInterval(tick, delay);
   };
 
-  root.addEventListener("mouseenter", () => clearInterval(timer));
-  root.addEventListener("mouseleave", restart);
   show(0);
-  restart();
+  requestAnimationFrame(() => restart(2000));
 }
 
 function initHome() {
