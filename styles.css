@@ -398,7 +398,7 @@ main {
   position: absolute;
   inset: 0;
   opacity: 0;
-  transition: opacity 900ms ease, transform 900ms ease;
+  transition: opacity 350ms ease, transform 350ms ease;
   transform: scale(1);
   background: transparent;
 }
